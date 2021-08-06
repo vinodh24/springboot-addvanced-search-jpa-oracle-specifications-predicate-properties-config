@@ -1,0 +1,14 @@
+# Application Config
+spring:
+  application:
+    name: spring-database-example
+  cloud:    loadbalancer:      retry:        enabled: false
+  profiles:
+    active:
+     - postgres
+     #- oracle  
+     
+server:  port: 9385
+  
+  
+  
