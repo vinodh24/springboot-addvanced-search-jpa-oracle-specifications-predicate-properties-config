@@ -23,7 +23,7 @@ public class SwaggerConfig {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
 				.paths(PathSelectors.any())
-				.apis(RequestHandlerSelectors.basePackage("com.velankani")).build()
+				.apis(RequestHandlerSelectors.basePackage("com.vinodh")).build()
 				.apiInfo(apiInfo());
 	}
 
@@ -33,9 +33,9 @@ public class SwaggerConfig {
 				"All Alarm related information",
 				"API",
 				"Terms of services",
-				new Contact("Velankani Software Private Limited", "https://vcti.io/", "vinodh.sangavaram@velankani.com"),
+				new Contact("Vinodh Software Private Limited", "https://vcti.io/", "vinodh.sangavaram@vinodh.com"),
 				"License of API",
-				"https://vcti.io/",
+				"https://vinodh.io/",
 				Collections.emptyList());
 		return apiInfo;
 	}
